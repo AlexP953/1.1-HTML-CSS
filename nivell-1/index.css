@@ -1,0 +1,21 @@
+section{
+    background: black; 
+    max-height: 45%; 
+    max-width: 1200px;
+    margin: 5px;
+    display: flex;
+}
+
+header{
+    background-color: #2C4059;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+header > * {
+background-color: red;
+}
+
