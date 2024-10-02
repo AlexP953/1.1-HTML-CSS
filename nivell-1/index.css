@@ -1,52 +1,62 @@
-  body{
+  body {
     max-width: 1200px;
   }
 
-  .background{
+  .background {
     background-color: #222;
   }
 
-  div.background:first-of-type{
-    height: 190px;
+  div.background:first-of-type {
+    height: 205px;
+    padding: 5px 0px;
   }
-  
+
   header {
+    background: #2C4059;
+    margin: 0 15px;
+  }
+
+  header span {
     display: flex;
     justify-content: space-between;
     padding: 14px;
     gap: 25px;
+    margin: 10px 0px;
   }
-  
-  .logo, .nav, .social {
+
+  .logo,
+  .nav,
+  .social {
     padding: 20px;
     background-color: #ff8484;
     flex: 1;
   }
-  
+
   .nav {
     flex: 2;
   }
-  
+
   .banner {
     background-color: #FF8B00;
-    padding: 10px;
+    padding: 5px;
     width: 96%;
     margin: auto;
   }
 
-  .banner .h2{
-    background: #FED700;
-    height: 50px;
-    width: 99%;
-    margin: 7px auto;
+  .banner h2 {
+    background-color: #FED700;
+    margin: 10px;
+    height: 55px;
+    display: flex;
+    align-items: center;
   }
-  
+
   .container {
     display: flex;
     padding: 20px 14px;
     margin: 15px 0px;
   }
-  
+
   .articles-container {
     flex: 7;
     display: flex;
@@ -57,26 +67,26 @@
     margin-right: 25px;
   }
 
-  .articles{
+  .articles {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
   }
-  
+
   .article {
     background-color: #4dabf7;
     padding: 20px;
     text-align: center;
     flex: 1 1 calc(35% - 10px);
   }
-  
-  .navegacion{
+
+  .navegacion {
     background-color: #71A3C4;
     padding: 20px;
     margin-top: 5px;
   }
-  
+
   .publicidad {
     flex: 1;
     display: flex;
@@ -85,13 +95,13 @@
     background-color: #F63F51;
     padding: 25px;
   }
-  
+
   .ad {
     background-color: #ffdd57;
     padding: 20px;
   }
-  
-  footer{
+
+  footer {
     display: flex;
   }
 
@@ -101,4 +111,3 @@
     width: 95%;
     margin: 15px auto;
   }
-  
