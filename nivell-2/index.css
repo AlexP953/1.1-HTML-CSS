@@ -1,0 +1,154 @@
+  body {
+    max-width: 1200px;
+  }
+
+  .background {
+    background-color: #222;
+  }
+
+  div.background:first-of-type {
+    height: auto;
+    padding: 5px 0px;
+    padding-bottom: 20px;
+  }
+
+  header {
+    background: #2C4059;
+    margin: 0 15px;
+  }
+
+  header span {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    gap: 25px;
+    margin: 10px 0px;
+  }
+
+  .logo,
+  .nav,
+  .social {
+    padding: 20px;
+    background-color: #ff8484;
+    flex: 1;
+  }
+
+  .nav {
+    flex: 2;
+  }
+
+  .banner {
+    background-color: #FF8B00;
+    padding: 5px;
+    margin: 15px;
+    margin-bottom: 0;
+  }
+
+  .banner h2 {
+    background-color: #FED700;
+    margin: 10px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    padding: 20px 14px;
+    margin: 15px 0px;
+  }
+
+  .articles-container {
+    flex: 7;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #4E4D6B;
+    padding: 20px;
+    margin-right: 25px;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .article {
+    background-color: #4dabf7;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(35% - 10px);
+  }
+
+  .navegacion {
+    background-color: #71A3C4;
+    padding: 20px;
+    margin-top: 5px;
+  }
+
+  .publicidad {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F63F51;
+    padding: 25px;
+  }
+
+  .ad {
+    background-color: #ffdd57;
+    padding: 20px;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  footer span {
+    background-color: #ffe066;
+    padding: 8px;
+    width: 100%;
+    margin: 12px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    header span {
+      flex-direction: column;
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    .articles-container {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header span {
+      flex-direction: column;
+    }
+
+    .banner {
+      padding: 5px 0;
+    }
+
+    .banner h2 {
+      margin: 15px;
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    .articles-container {
+      margin: 0 0 20px 0;
+    }
+
+    .articles {
+      flex-direction: column;
+    }
+  }
