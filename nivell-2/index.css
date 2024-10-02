@@ -2,18 +2,19 @@
     max-width: 1200px;
   }
 
-  .background {
-    background-color: #222;
-  }
 
   div.background:first-of-type {
-    height: auto;
     padding: 5px 0px;
     padding-bottom: 20px;
+    background-image: url(./assets/header.jpg);
+    background-position: center;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   header {
-    background: #2C4059;
     margin: 0 15px;
   }
 
@@ -25,31 +26,71 @@
     margin: 10px 0px;
   }
 
+  .logo img {
+    width: 60%;
+  }
+
   .logo,
   .nav,
   .social {
-    padding: 20px;
-    background-color: #ff8484;
     flex: 1;
   }
 
+  .social span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .social span img {
+    width: 15%;
+  }
+
   .nav {
-    flex: 2;
+    flex: 5;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .nav div:hover {
+    font-size: 120%;
+    filter: drop-shadow(2px 4px 2px grey);
+  }
+
+  .social span img:hover {
+    width: 20%;
+    filter: drop-shadow(2px 4px 2px grey);
+  }
+
+  .logo img:hover {
+    width: 66%;
+    filter: drop-shadow(2px 4px 2px grey);
   }
 
   .banner {
-    background-color: #FF8B00;
     padding: 5px;
-    margin: 15px;
-    margin-bottom: 0;
+    background: #80808033;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    top: 20px;
   }
 
   .banner h2 {
-    background-color: #FED700;
-    margin: 10px;
+    margin: 35px;
     height: 55px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: orange;
+    opacity: 0.5;
   }
 
   .container {
@@ -113,7 +154,25 @@
     margin: 12px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
+    .logo img {
+      width: 5%;
+      margin: auto;
+      display: flex;
+    }
+
+    .social span {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      position: relative;
+      bottom: 185px;
+    }
+
+    .social span img {
+      width: 5%;
+    }
+
     header span {
       flex-direction: column;
     }
@@ -122,9 +181,28 @@
       flex-direction: column;
     }
 
+    div.background:first-of-type {
+      height: 390px;
+    }
+
     .articles-container {
       margin: 0 0 20px 0;
     }
+
+    .banner {
+      top: -150px;
+    }
+
+    .social span img:hover {
+      width: 6%;
+      filter: drop-shadow(2px 4px 2px grey);
+    }
+
+    .logo img:hover {
+      width: 6%;
+      filter: drop-shadow(2px 4px 2px grey);
+    }
+
   }
 
   @media screen and (max-width: 768px) {
