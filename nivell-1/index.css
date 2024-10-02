@@ -40,8 +40,8 @@
   .banner {
     background-color: #FF8B00;
     padding: 5px;
-    width: 96%;
-    margin: auto;
+    margin: 15px;
+    margin-bottom: 0;
   }
 
   .banner h2 {
@@ -108,21 +108,47 @@
 
   footer span {
     background-color: #ffe066;
-    padding: 10px;
-    width: 95%;
-    margin: 15px auto;
+    padding: 8px;
+    width: 100%;
+    margin: 12px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    header span{
+    header span {
       flex-direction: column;
     }
 
-    .container{
+    .container {
       flex-direction: column;
     }
 
-    .articles-container{
+    .articles-container {
       margin: 0 0 20px 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header span {
+      flex-direction: column;
+    }
+
+    .banner {
+      padding: 5px 0;
+    }
+
+    .banner h2 {
+      margin: 15px;
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    .articles-container {
+      margin: 0 0 20px 0;
+    }
+
+    .articles {
+      flex-direction: column;
     }
   }
