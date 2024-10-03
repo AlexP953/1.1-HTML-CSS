@@ -310,3 +310,35 @@
       padding: 20px 0px;
     }
   }
+
+  i{
+    animation: tornadoX 1s ease-in;
+  }
+
+  .banner{
+    animation: changeOpacity 2s ease-in;
+  }
+
+  .logo img {
+    animation: tornadoY 1s ease-in-out;
+  }
+
+  @keyframes tornadoX {
+    0%{transform: rotateX(0);}
+    25%{transform: rotateX(45deg);}
+    50%{transform: rotateX(75deg);}
+    75%{transform: rotateX(120deg);}
+    100%{transform: rotateX(0);} 
+  }
+
+  @keyframes tornadoY {
+    0%{transform:translateX(-100px);}
+    50%{transform:translateX(100px);}
+    100%{transform: translateX(0);} 
+  }
+  
+  @keyframes changeOpacity {
+    0%{background:#80808033}
+    50%{background:#808080}
+    100%{background:#80808033}
+  }
